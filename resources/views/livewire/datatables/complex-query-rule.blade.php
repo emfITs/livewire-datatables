@@ -83,11 +83,11 @@
             @endif
         </div>
         <div class="flex justify-center sm:justify-end">
-            <button wire:click="duplicateRule('{{ $key }}')"
+            <button type="button" wire:click="duplicateRule('{{ $key }}')"
                 class="mb-px w-9 h-9 flex items-center justify-center rounded text-green-600 hover:text-green-400">
                 <x-icons.copy />
             </button>
-            <button wire:click="removeRule('{{ $key }}')"
+            <button type="button" wire:click="removeRule('{{ $key }}')"
                 class="mb-px w-9 h-9 flex items-center justify-center rounded text-red-600 hover:text-red-400">
                 <x-icons.trash />
             </button>

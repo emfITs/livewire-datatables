@@ -37,7 +37,7 @@ class LivewireDatatableTemplateTest extends TestCase
         $subject = Livewire::test(LivewireDatatable::class, [
             'model' => DummyModel::class,
             'hideHeader' => true,
-        ])->assertDontSeeHtml('<button wire:click="sort');
+        ])->assertDontSeeHtml('<button type="button" wire:click="sort');
     }
 
     /** @test */

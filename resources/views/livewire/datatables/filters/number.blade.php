@@ -8,7 +8,7 @@
             placeholder="{{ __('MIN') }}"
         />
         <div class="absolute inset-y-0 right-0 pr-2 flex items-center">
-            <button x-on:click="$refs.min.value=''" wire:click="doNumberFilterStart('{{ $index }}', '')" class="-mb-0.5 pr-1 flex text-gray-400 hover:text-red-600 focus:outline-none" tabindex="-1">
+            <button type="button" x-on:click="$refs.min.value=''" wire:click="doNumberFilterStart('{{ $index }}', '')" class="-mb-0.5 pr-1 flex text-gray-400 hover:text-red-600 focus:outline-none" tabindex="-1">
                 <x-icons.x-circle class="h-5 w-5 stroke-current" />
             </button>
         </div>
@@ -23,7 +23,7 @@
             placeholder="{{ __('MAX') }}"
         />
         <div class="absolute inset-y-0 right-0 pr-2 flex items-center">
-            <button x-on:click="$refs.max.value=''" wire:click="doNumberFilterEnd('{{ $index }}', '')" class="-mb-0.5 pr-1 flex text-gray-400 hover:text-red-600 focus:outline-none" tabindex="-1">
+            <button type="button" x-on:click="$refs.max.value=''" wire:click="doNumberFilterEnd('{{ $index }}', '')" class="-mb-0.5 pr-1 flex text-gray-400 hover:text-red-600 focus:outline-none" tabindex="-1">
                 <x-icons.x-circle class="h-5 w-5 stroke-current" />
             </button>
         </div>
